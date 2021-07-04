@@ -1,6 +1,6 @@
 NAME	= so_long
 CC		= gcc
-#FLAGS	= -Wall -Werror -Wextra
+FLAGS	= -Wall -Werror -Wextra
 CFLAGS	= $(FLAGS) -I. -Imlx -Ilibft
 NORMIN	= norminette
 SRC		= src/main.c \
