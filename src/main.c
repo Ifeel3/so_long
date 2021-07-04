@@ -30,7 +30,8 @@ int	key_hook(int keycode, t_game *game)
 		moveright(game);
 	if (keycode == 13)
 		moveup(game);
-	mlx_put_image_to_window(game->data.mlx, game->data.win, game->imgs.wall.img, 0, 0);
+	mlx_put_image_to_window(game->data.mlx,
+		game->data.win, game->imgs.wall.img, 0, 0);
 	game->tmp = game->num;
 	game->num = ft_itoa(game->moves);
 	free((*game).tmp);
@@ -46,6 +47,6 @@ int	main(int argc, char **argv)
 	parser(argv, &game.map);
 	init(&game);
 	mlx_key_hook(game.data.win, key_hook, &game);
-	mlx_hook(game.data.win, 17, 1L<<2, closegame, 0);
+	mlx_hook(game.data.win, 17, 1L << 2, closegame, 0);
 	mlx_loop(game.data.mlx);
 }

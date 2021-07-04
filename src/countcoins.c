@@ -5,6 +5,7 @@ void	countcoins(t_game *game)
 	int	i;
 	int	j;
 
+	game->coins = 0;
 	i = 0;
 	while (i < game->map.height)
 	{

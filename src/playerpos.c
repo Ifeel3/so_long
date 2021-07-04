@@ -13,8 +13,8 @@ void	playerpos(t_game *game)
 		{
 			if (game->map.map[i][j] == 'P')
 			{
-				game->posx = i;
-				game->posy = j;
+				game->posx = j;
+				game->posy = i;
 				return ;
 			}
 			j++;
