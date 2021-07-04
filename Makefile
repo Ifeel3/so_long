@@ -7,7 +7,11 @@ SRC		= src/main.c \
 		src/checkfile.c \
 		src/parser.c \
 		src/checkmap.c \
-		src/error.c
+		src/error.c \
+		src/drawmap.c \
+		src/moves.c \
+		src/countcoins.c \
+		src/playerpos.c
 OBJ		= $(SRC:%.c=%.o)
 
 .PHONY: all re clean fclean libft mlx norm
