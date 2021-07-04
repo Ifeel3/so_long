@@ -62,7 +62,7 @@ void	parser(char **argv, t_map *map)
 	getlength(argv, map);
 	getheight(argv, map);
 	getmap(argv, map);
-	if (map->lenght < 4 || map->height < 4)
+	if (map->lenght < 3 || map->height < 3)
 		error();
 	checkmap(map);
 }
